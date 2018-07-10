@@ -22,7 +22,7 @@ if has("gui_running")
     set guioptions-=T
     set guioptions-=m
 else
-    colorscheme rdark
+    colorscheme VisualStudioDark
 endif
 
 " -------------------- OPTIONS ------------------
