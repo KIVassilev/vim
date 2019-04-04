@@ -7,6 +7,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
 Plugin 'w0rp/ale'
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 
 " ---------------- PLUGIN OPTIONS ---------------
