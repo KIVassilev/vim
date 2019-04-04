@@ -8,6 +8,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
 Plugin 'w0rp/ale'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 " ---------------- PLUGIN OPTIONS ---------------
