@@ -10,6 +10,7 @@ Plugin 'w0rp/ale'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 
 " ---------------- PLUGIN OPTIONS ---------------
@@ -29,8 +30,8 @@ else
 endif
 
 " -------------------- OPTIONS ------------------
-set sw=4
-set tabstop=4
+set sw=2
+set tabstop=2
 set expandtab
 set smartindent
 set incsearch
@@ -43,6 +44,7 @@ set so=8
 set number
 set statusline=%f%m%r%=[BUF:%n][POS:%p%%]
 set ls=2
+set wildignore+=node_modules/**
 
 " ------------------- SHORTCUTS -----------------
 " Split zoom in/out
@@ -78,3 +80,8 @@ map <S-F4> :cp<CR>
 map <F5> :w<CR>:! ./%<CR>
 map <F6> :vimgrep <C-R><C-W> **/*.
 map <F7> :wa<CR>:make<CR>
+
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
