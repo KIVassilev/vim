@@ -1,5 +1,6 @@
 " -------------------- VUNDLE -------------------
 set rtp+=~/.vim/bundle/Vundle.vim
+let g:ale_completion_enabled = 1
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
@@ -19,6 +20,10 @@ let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeIgnore = ['\.pyc$']
 let g:airline#extensions#bufferline#enabled = 1
 
+if !exists("g:ycm_semantic_triggers")
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers['typescript'] = ['.']
 " ---------------- COLOR & GUI ------------------
 syntax on
 if has("gui_running")
@@ -81,7 +86,3 @@ map <F5> :w<CR>:! ./%<CR>
 map <F6> :vimgrep <C-R><C-W> **/*.
 map <F7> :wa<CR>:make<CR>
 
-if !exists("g:ycm_semantic_triggers")
-  let g:ycm_semantic_triggers = {}
-endif
-let g:ycm_semantic_triggers['typescript'] = ['.']
