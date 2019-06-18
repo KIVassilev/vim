@@ -9,9 +9,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
 Plugin 'w0rp/ale'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'Quramy/tsuquyomi'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'Shougo/vimproc.vim'
 call vundle#end()
 
 " ---------------- PLUGIN OPTIONS ---------------
@@ -19,11 +16,6 @@ let g:ctrlp_extensions = ['tag']
 let g:NERDTreeQuitOnOpen = 1 
 let g:NERDTreeIgnore = ['\.pyc$']
 let g:airline#extensions#bufferline#enabled = 1
-
-if !exists("g:ycm_semantic_triggers")
-  let g:ycm_semantic_triggers = {}
-endif
-let g:ycm_semantic_triggers['typescript'] = ['.']
 " ---------------- COLOR & GUI ------------------
 syntax on
 if has("gui_running")
