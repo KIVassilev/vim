@@ -2,13 +2,12 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 let g:ale_completion_enabled = 1
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-airline/vim-airline'
-Plugin 'w0rp/ale'
-Plugin 'leafgarland/typescript-vim'
+Plugin 'dense-analysis/ale'
 call vundle#end()
 
 " ---------------- PLUGIN OPTIONS ---------------
