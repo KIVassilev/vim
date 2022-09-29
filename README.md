@@ -1,6 +1,6 @@
 # Installation
 ```
-git clone --recurse-submodules https://github.com/KIVassilev/vim ~/.vim
+git clone --recurse-submodules git@github.com:KIVassilev/vim.git ~/.vim
 ```
 # Setup
 When you launch VIM do
