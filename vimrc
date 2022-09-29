@@ -39,7 +39,7 @@ set so=8
 set number
 set statusline=%f%m%r%=[BUF:%n][POS:%p%%]
 set ls=2
-set wildignore=*/node_modules/*
+set wildignore=*/node_modules/*,*/_build/*
 
 " ------------------- SHORTCUTS -----------------
 " Split zoom in/out
