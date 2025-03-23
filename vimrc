@@ -17,11 +17,11 @@ let g:airline#extensions#bufferline#enabled = 1
 " ---------------- COLOR & GUI ------------------
 syntax on
 if has("gui_running")
-    colorscheme VisualStudioDark
+    colorscheme industry
     set guioptions-=T
     set guioptions-=m
 else
-    colorscheme delek
+    colorscheme industry
 endif
 
 " -------------------- OPTIONS ------------------
